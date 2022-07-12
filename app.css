@@ -84,8 +84,8 @@ body {
 }
 
 .memory-game {
-  min-width: 80%;
-  max-width: 800px;
+  width: 600px;
+  width: 800px;
   aspect-ratio: 4/3;
   margin: auto;
   display: flex;
@@ -93,23 +93,24 @@ body {
 }
 
 .card {
-  height: calc(33.33% - 20px);
-  width: calc(25% - 20px);
-  margin: 10px;
-  background-color: white;
+  height: calc(33.33% - 16px);
+  width: calc(25% - 16px);
+  margin: 8px;
+  background-color: rgba(2, 94, 94, 0.562);
   position: relative;
-  box-shadow: 0 0 3px rgba(1, 1, 1, 0.5);
-  border-radius: 10px;
+  box-shadow: 0 0 2px 4px rgba(1, 1, 1, 0.5);
   cursor: pointer;
+  border-radius: 12px;
   transform: scale(1);
-  transition: transform 200ms ease-in-out;
+  transition: transform 100ms ease-in-out;
 }
 
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .card-front,
 .card-back {
   position: absolute;
+  border-radius: 12px;
 }

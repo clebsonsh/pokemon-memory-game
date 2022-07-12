@@ -84,8 +84,9 @@ body {
 }
 
 .memory-game {
-  height: 600px;
-  width: 800px;
+  min-width: 80%;
+  max-width: 800px;
+  aspect-ratio: 4/3;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
